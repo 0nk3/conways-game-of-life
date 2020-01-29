@@ -5,9 +5,10 @@ package com.conway.gameoflife;
 * formatOutput simply formats the tables in a nice readable way     *
 * ***************************************************************** */
 interface Conway {
-    void display(int[][] array);
+    void display(char[][] array);
     int[][] firstGen(int rows, int columns);
     void formatOutput(int rows);
-    int ROWS = 15;
-    int COLUMNS = 15;
+    char[][] toStrings(int[][] array);
+    int ROWS = 10;
+    int COLUMNS = 10;
 }

@@ -10,14 +10,13 @@ public class secondGeneration extends firstGeneration {
             for (int j = 0; j < COLUMNS; j++) {
                 // treating the edges
                 int state = initialGrid[i][j];
-                    if (state == 0 && neighbours == 3) {
-                        secondGrid[i][j] = 1;
-                    } else if (state == 1 && (neighbours < 2 || neighbours > 3)) {
-                        secondGrid[i][j] = 0;
-                    } else {
-                        secondGrid[i][j] = state;
-                    }
-
+                if (state == 0 && neighbours == 3) {
+                    secondGrid[i][j] = 1;
+                } else if (state == 1 && (neighbours < 2 || neighbours > 3)) {
+                    secondGrid[i][j] = 0;
+                } else {
+                    secondGrid[i][j] = state;
+                }
             }
         }
         return secondGrid;
@@ -39,7 +38,7 @@ public class secondGeneration extends firstGeneration {
     }
     // display the second generation
     @Override
-    public void display(int[][] finalGen) {
+    public void display(char[][] finalGen) {
         for(int i = 0; i < finalGen.length *4; i++){
             System.out.print("_");
         }

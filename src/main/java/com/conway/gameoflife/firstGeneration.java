@@ -21,10 +21,28 @@ public class firstGeneration implements Conway {
         }
         System.out.println();
     }
+    // this method accepts a 2 dimensional array and converts it to a string
+    // According to the problem set :
+    // Alive = # = 1
+    // Dead  = + = 0
+    @Override
+    public char[][] toStrings(int[][] arr) {
+        char[][] newArray = new char[arr.length][arr.length];
+        for (int i = 0; i < arr.length ; i++) {
+            for (int j = 0; j < arr.length ; j++) {
+                if(arr[i][j]==1){
+                    newArray[i][j] = '#';
+                }else {
+                    newArray[i][j] = '+';
+                }
+            }
+        }
+        return newArray;
+    }
 
     // displaying the first generation table
     @Override
-    public void display(int[][] fistGen){
+    public void display(char[][] fistGen){
         formatOutput(fistGen.length);
         for (int i = 0; i < ROWS; i++) {
             for (int j = 0; j < COLUMNS; j++) {

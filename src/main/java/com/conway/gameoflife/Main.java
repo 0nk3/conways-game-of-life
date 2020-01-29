@@ -16,13 +16,15 @@ class Main {
         //generate and display the fist generation
         firstGeneration generationOne = new firstGeneration();
         int[][] filledUP = generationOne.firstGen(Conway.ROWS, Conway.COLUMNS);
-        generationOne.display(filledUP);
+        char[][] firstGeneration = generationOne.toStrings(filledUP);
+        generationOne.display(firstGeneration);
 
         //generate the second generation based on the previous generation
         secondGeneration generationTwo = new secondGeneration();
         int[][] finalGen = generationTwo.secondGen(generationOne.firstGen(Conway.ROWS, Conway.COLUMNS));
         System.out.println("====================> SECOND GENERATION <=======================");
-        generationTwo.display(finalGen);
+        char[][] secondGeneration = generationTwo.toStrings(finalGen);
+        generationTwo.display(secondGeneration);
 
     }
 }
