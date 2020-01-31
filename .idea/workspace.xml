@@ -6,20 +6,27 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/Conway.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/Conway.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/firstGeneration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/firstGeneration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/secondGeneration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/secondGeneration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/conway/gameoflife/secondGenerationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/conway/gameoflife/secondGenerationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.conway.gameoflife.secondGenerationTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.conway.gameoflife.secondGenerationTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.conway.gameoflife.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.conway.gameoflife.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.conway.gameoflife.secondGenerationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.conway.gameoflife.secondGenerationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/Conway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/Conway.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/firstGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/firstGeneration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/secondGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/secondGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/conway/gameoflife/secondGenerationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/conway/gameoflife/secondGenerationTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,12 +133,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="secondGenerationTest.fourAliveSpeciesNextToEachOther" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="secondGenerationTest.givenTestCase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.conway.gameoflife.secondGenerationTest.fourAliveSpeciesNextToEachOther&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.conway.gameoflife.secondGenerationTest.givenTestCase&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -146,12 +153,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="secondGenerationTest.givenTestCase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="secondGenerationTest.testCaseNoSpecies" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.conway.gameoflife.secondGenerationTest.givenTestCase&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.conway.gameoflife.secondGenerationTest.testCaseNoSpecies&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -188,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.secondGenerationTest.givenTestCase" />
+        <item itemvalue="Gradle.secondGenerationTest.testCaseNoSpecies" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.secondGenerationTest" />
         <item itemvalue="Gradle.secondGenerationTest.threeAliveOneDead" />
-        <item itemvalue="Gradle.secondGenerationTest.fourAliveSpeciesNextToEachOther" />
-        <item itemvalue="Gradle.secondGenerationTest.givenTestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +221,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

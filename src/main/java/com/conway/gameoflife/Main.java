@@ -1,5 +1,7 @@
 package com.conway.gameoflife;
 
+import java.util.Arrays;
+
 /* ******************************************************** *
  * @author : Ndumiso Onke Fanti                             *
  * Title : Conways Game of Life                             *
@@ -12,19 +14,25 @@ package com.conway.gameoflife;
 class Main {
     public static void main(String[] args) {
 
-        System.out.println("==================> FIRST GENERATION <==========================");
+        System.out.println("===================> FIRST GENERATION <==========================");
+
         //generate and display the fist generation
         firstGeneration generationOne = new firstGeneration();
         int[][] filledUP = generationOne.firstGen(Conway.ROWS, Conway.COLUMNS);
+        //System.out.println("First Generation -->" + Arrays.deepToString(filledUP));
         char[][] firstGeneration = generationOne.toStrings(filledUP);
+        // display grid
         generationOne.display(firstGeneration);
+
+        System.out.println("====================> SECOND GENERATION <=======================");
 
         //generate the second generation based on the previous generation
         secondGeneration generationTwo = new secondGeneration();
-        int[][] finalGen = generationTwo.secondGen(generationOne.firstGen(Conway.ROWS, Conway.COLUMNS));
-        System.out.println("====================> SECOND GENERATION <=======================");
-        char[][] secondGeneration = generationTwo.toStrings(finalGen);
-        generationTwo.display(secondGeneration);
+        int[][] finale = generationTwo.secondGen(filledUP);;
+        //System.out.println("Second Generation -->" + Arrays.deepToString(finale));
+        char[][] secGen = generationTwo.toStrings(finale);
+        //display grid
+        generationTwo.display(secGen);
 
     }
 }

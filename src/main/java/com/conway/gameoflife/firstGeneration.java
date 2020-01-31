@@ -1,14 +1,17 @@
 package com.conway.gameoflife;
 
+import java.util.Random;
+
 public class firstGeneration implements Conway {
     // fill up the empty array with random binary numbers(0 or 1)
     // and return the filled up array as initial generation
     @Override
     public int[][] firstGen(int rows, int columns) {
+        Random random = new Random();
         int[][] firstGen = new int[ROWS][COLUMNS];
         for (int i = 0; i < ROWS; i++) {
             for (int j = 0; j < COLUMNS; j++) {
-                firstGen[i][j] = (int) (Math.random() * 2);
+                firstGen[i][j] = random.nextInt(2);
             }
         }
         return firstGen;
@@ -16,7 +19,7 @@ public class firstGeneration implements Conway {
     // This methods simply formats the output of the arrays in a nice readable format
     @Override
     public void formatOutput(int rows) {
-        for (int i = 0; i < rows*4 ; i++) {
+        for (int i = 0; i < COLUMNS*4 ; i++) {
             System.out.print("_");
         }
         System.out.println();
@@ -27,9 +30,9 @@ public class firstGeneration implements Conway {
     // Dead  = + = 0
     @Override
     public char[][] toStrings(int[][] arr) {
-        char[][] newArray = new char[arr.length][arr.length];
-        for (int i = 0; i < arr.length ; i++) {
-            for (int j = 0; j < arr.length ; j++) {
+        char[][] newArray = new char[ROWS][COLUMNS];
+        for (int i = 0; i < ROWS ; i++) {
+            for (int j = 0; j < COLUMNS ; j++) {
                 if(arr[i][j]==1){
                     newArray[i][j] = '#';
                 }else {
