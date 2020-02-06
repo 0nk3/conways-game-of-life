@@ -6,45 +6,36 @@ public class secondGeneration extends firstGeneration {
     int[][] secondGen(int[][] initialGrid) {
 
         int[][] secondGrid = new int[ROWS][COLUMNS];
-        for (int i = 0; i < ROWS; i++) {
-            for (int j = 0; j < COLUMNS; j++) {
-                int neighbours = countLiveNeighbours(initialGrid, i, j);
-                //System.out.println("neighbours : " + neighbours);
-                int state = initialGrid[i][j];
-            // 1. loneliness = death.
-                if (state == 1 && neighbours < 2) {
-                    secondGrid[i][j] = 0;
-           // 2. over population = death
-                }else if(state == 1 && neighbours > 3 ){
-                    secondGrid[i][j] = 0;
-            //3. reproduction = birth
-                }else if(state ==0 && neighbours==3){
-                    secondGrid[i][j] = 1;
-                }
-            //4. Maintains state = no change
-                else {
-                    secondGrid[i][j] = state;
+        // going through every element
+        for (int x = 1; x < ROWS - 1; x++){
+            for (int y = 1; y < COLUMNS - 1; y++){
+            // count live neigbours
+                int aliveNeighbours = 0;
+                for (int i = -1; i <= 1; i++)
+                    for (int j = -1; j <= 1; j++)
+                        aliveNeighbours += initialGrid[x + i][y + j];
+            // Should subtract to exclude the cell itself
+                aliveNeighbours -= initialGrid[x][y];
+
+            // 1. underpopulation/over population = death.
+                if (initialGrid[x][y]==1 && (aliveNeighbours < 2 || aliveNeighbours > 3)) {
+                    secondGrid[x][y] = 0;
+           // 2. reproduction = birth
+                }else if(initialGrid[x][y] == 0 && aliveNeighbours == 3 ){
+                    secondGrid[x][y] = 1;
+         //  3, Survival(2 or 3 neighbours)
+                }else if(initialGrid[x][y] == 1 && (aliveNeighbours == 3 || aliveNeighbours == 2) ){
+                    secondGrid[x][y] = initialGrid[x][y];
+            //3. Maintains state
+                }else {
+                    secondGrid[x][y]  = 0;
+
                 }
             }
         }
         return secondGrid;
     }
-    // TODO check the total number of live neighbours
-    private int countLiveNeighbours(int[][] firstGen, int x, int y) {
-        int sum = 0;
-        for (int i = -1; i < 2; i++) {
-            for (int j = -1; j < 2; j++) {
-                // implement a wrapper to take care of the edge and avoid IndexOutOfBound Exception
 
-                int col = (x + i + COLUMNS) % COLUMNS;
-                int row = (y + j + ROWS) % ROWS;
-                sum += firstGen[row][col];
-            }
-        }
-        // I shouldn't count the current element , so it must be excluded before the actual return value
-        sum -= firstGen[x][y];
-        return sum;
-    }
     // display the second generation
     @Override
     public void display(char[][] finalGen) {
@@ -52,6 +43,7 @@ public class secondGeneration extends firstGeneration {
             System.out.print("_");
         }
         System.out.println();
+
         for (int i = 0; i < ROWS; i++) {
             for (int j = 0; j < COLUMNS; j++) {
                 System.out.print("|" + finalGen[i][j] + "| ");

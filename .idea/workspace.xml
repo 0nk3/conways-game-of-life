@@ -12,8 +12,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/firstGeneration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/firstGeneration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/secondGeneration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/conway/gameoflife/secondGeneration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/conway/gameoflife/secondGenerationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/conway/gameoflife/secondGenerationTest.class" afterDir="false" />
@@ -22,8 +22,6 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.conway.gameoflife.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.conway.gameoflife.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.conway.gameoflife.secondGenerationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.conway.gameoflife.secondGenerationTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/Conway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/Conway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/firstGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/firstGeneration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/secondGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/conway/gameoflife/secondGeneration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/conway/gameoflife/secondGenerationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/conway/gameoflife/secondGenerationTest.java" afterDir="false" />
@@ -53,8 +51,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,6 +98,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="GameofLife" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GameofLife" />
+      <module name="untitled.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.conway.gameoflife.Main" />
       <module name="untitled.main" />
@@ -173,33 +178,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="secondGenerationTest.threeAliveOneDead" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.conway.gameoflife.secondGenerationTest.threeAliveOneDead&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GameofLife" />
         <item itemvalue="Gradle.secondGenerationTest.givenTestCase" />
         <item itemvalue="Gradle.secondGenerationTest.testCaseNoSpecies" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.secondGenerationTest" />
-        <item itemvalue="Gradle.secondGenerationTest.threeAliveOneDead" />
       </list>
     </recent_temporary>
   </component>

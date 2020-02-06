@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.conway.gameoflife.secondGenerationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-01-30T17:44:24" hostname="kali" time="0.007">
+<testsuite name="com.conway.gameoflife.secondGenerationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-06T15:08:52" hostname="kali" time="0.008">
   <properties/>
-  <testcase name="givenTestCase()" classname="com.conway.gameoflife.secondGenerationTest" time="0.007">
+  <testcase name="givenTestCase()" classname="com.conway.gameoflife.secondGenerationTest" time="0.008">
     <failure message="java.lang.ArrayIndexOutOfBoundsException: 3" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: 3
-	at com.conway.gameoflife.secondGeneration.secondGen(secondGeneration.java:26)
+	at com.conway.gameoflife.secondGeneration.secondGen(secondGeneration.java:16)
 	at com.conway.gameoflife.secondGenerationTest.givenTestCase(secondGenerationTest.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

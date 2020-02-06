@@ -3,6 +3,7 @@ package com.conway.gameoflife;
 import java.util.Random;
 
 public class firstGeneration implements Conway {
+
     // fill up the empty array with random binary numbers(0 or 1)
     // and return the filled up array as initial generation
     @Override
