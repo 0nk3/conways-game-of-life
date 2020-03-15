@@ -9,7 +9,4 @@ interface Conway {
     int[][] firstGen(int rows, int columns);
     void formatOutput(int rows);
     char[][] toStrings(int[][] array);
-    // board dimensions
-    int ROWS = 10;
-    int COLUMNS = 10;
 }

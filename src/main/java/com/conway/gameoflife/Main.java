@@ -1,16 +1,12 @@
 package com.conway.gameoflife;
-
-import java.util.Arrays;
-
-/* ******************************************************** *
- * @author : Ndumiso Onke Fanti                             *
- * Title : Conways Game of Life                             *
- * The primary goal is to make a console version of the game*
- * of life but with only 2 states i.e initial generation and*
- * the generation that should follow based on what we had   *
- * initially.I only need two objects keeping track of just  *
- * two generations.
- * ******************************************************** */
+/* ************************************************************************** *
+ * @author : Ndumiso Onke Fanti                                               *
+ * Title : Conways Game of Life                                               *
+ * The primary goal is to make a console version of the game of life but with *
+ * only 2 states i.e initial generation and the generation that should follow *
+ *  based on what we had initially.I only need two objects keeping track of   *
+ * just two generations.                                                      *
+ * ************************************************************************** */
 class Main {
     public static void main(String[] args) {
 
@@ -18,7 +14,7 @@ class Main {
 
         //generate and display the fist generation
         firstGeneration generationOne = new firstGeneration();
-        int[][] filledUP = generationOne.firstGen(Conway.ROWS, Conway.COLUMNS);
+        int[][] filledUP = generationOne.firstGen(firstGeneration.ROWS, firstGeneration.COLUMNS);
         //System.out.println("First Generation -->" + Arrays.deepToString(filledUP));
         char[][] firstGeneration = generationOne.toStrings(filledUP);
         // display grid
@@ -33,6 +29,5 @@ class Main {
         char[][] secGen = generationTwo.toStrings(finale);
         //display grid
         generationTwo.display(secGen);
-
     }
 }

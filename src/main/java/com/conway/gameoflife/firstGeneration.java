@@ -3,6 +3,9 @@ package com.conway.gameoflife;
 import java.util.Random;
 
 public class firstGeneration implements Conway {
+    // board dimensions
+    static final int ROWS = 3;
+    static final int COLUMNS = 6;
 
     // fill up the empty array with random binary numbers(0 or 1)
     // and return the filled up array as initial generation

@@ -25,6 +25,7 @@ class secondGenerationTest {
 
         Assert.assertArrayEquals(expected, generation.secondGen(array0));
     }*/
+    //TODO fix
     @Test
     void givenTestCase(){
         int[][] input = {
@@ -33,9 +34,9 @@ class secondGenerationTest {
                 {0, 0, 0, 0, 0, 0}
         };
         int[][] expected = {
-                {0, 0, 0, 0, 0, 0},
+                {0, 0, 1, 0, 0, 0},
                 {0, 0, 1, 1, 0, 0},
-                {0, 0, 0, 0, 0, 0}
+                {0, 0, 0, 1, 0, 0}
         };
         Assert.assertArrayEquals(expected, generation.secondGen(input));
     }
